@@ -1,23 +1,13 @@
 ---
-layout: default
+layout: black-screen
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <center>
+    <!-- <a href="{{ "/home" | prepend: site.baseurl }}"> -->
+      <p><h2>It's happening</h2></p>
+      <p><h1 class="mega-date">9 &#183; 2 &#183; 17</h1></p>
+      <p><h3>... it's <i>really</i> happening.</h3></p>
+    <!-- </a> -->
+  </center>
 </div>

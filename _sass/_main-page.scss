@@ -1,0 +1,36 @@
+body.inverted {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  resize: vertical;
+}
+
+.home {
+  padding-bottom: 200px;
+  margin: 0 auto;
+  resize: vertical;
+
+  a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .mega-date {
+    font-size: 10em;
+    // @extend .cursive;
+    font-family: helvetica;
+  }
+
+  @include media-query($on-laptop) {
+    font-size: 0.9em;
+  }
+  @include media-query($on-palm) {
+    font-size: 0.7em;
+  }
+  @include media-query($on-tiny) {
+    font-size: 0.6em;
+  }
+}
