@@ -21,7 +21,8 @@ body.inverted {
   .mega-date {
     font-size: 10em;
     // @extend .cursive;
-    font-family: helvetica;
+    font-family: Courier;
+    letter-spacing: -0.2em;
   }
 
   @include media-query($on-laptop) {
