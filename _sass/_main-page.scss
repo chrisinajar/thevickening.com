@@ -26,12 +26,12 @@ body.inverted {
   }
 
   @include media-query($on-laptop) {
-    font-size: 0.9em;
-  }
-  @include media-query($on-palm) {
     font-size: 0.7em;
   }
+  @include media-query($on-palm) {
+    font-size: 0.5em;
+  }
   @include media-query($on-tiny) {
-    font-size: 0.6em;
+    font-size: 0.4em;
   }
 }
