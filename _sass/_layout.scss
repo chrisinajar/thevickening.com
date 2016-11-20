@@ -31,8 +31,15 @@ body {
 
 .contact-list,
 .social-media-list {
+  display: flex;
   list-style: none;
   margin-left: 0;
+  justify-content: space-around;
+
+  li {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .footer-col-wrapper {

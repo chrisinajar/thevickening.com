@@ -2,34 +2,43 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
+    <div class="footer-col-wrapper row">
+      <div class="col-xs-1 col-md-2"></div>
+      <div class="footer-col col-xs-10 col-md-8">
         <ul class="social-media-list">
-          {% if site.github_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            <center>#thevickening</center>
           </li>
-          {% endif %}
+        </ul>
+        <ul class="social-media-list inline">
+          <li>
+            <a href="https://twitter.com/hashtag/thevickening"><span class="icon large icon--twitter">{% include icon-twitter.svg %}</span></a>
+          </li>
+          <li>
+          <a href="https://www.facebook.com/hashtag/thevickening"><span class="icon large icon--facebook">{% include icon-facebook.svg %}</span></a>
+          </li>
+          <li>
+          <a href="https://www.instagram.com/explore/tags/thevickening/"><span class="icon large icon--instagram">{% include icon-instagram.svg %}</span></a>
+          </li>
+          <!-- 
+          <li>
+            <a href="https://twitter.com/hashtag/thevickening"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username">#thevickening</span></a>
+          </li>
+          <li>
+          <a href="https://www.facebook.com/hashtag/thevickening"><span class="icon icon--facebook">{% include icon-facebook.svg %}</span><span class="username">#thevickening</span></a>
+          </li>
+          <li>
+          <a href="https://www.instagram.com/explore/tags/thevickening/"><span class="icon icon--instagram">{% include icon-instagram.svg %}</span><span class="username">#thevickening</span></a>
+          </li> -->
+<!-- 
+          <li>
+          <a href="https://github.com/chrisinajar/thevickening.com"><span class="icon icon--github">{% include icon-github.svg %}</span><span class="username">Source</span></a>
+          </li> -->
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+      <div class="footer-col col-xs-1 col-md-2">
       </div>
     </div>
 

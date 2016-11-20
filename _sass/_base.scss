@@ -195,6 +195,10 @@ pre {
  * Icons
  */
 .icon {
+    &.large > svg {
+        height: 32px;
+        width: 32px;
+    }
 
     > svg {
         display: inline-block;
