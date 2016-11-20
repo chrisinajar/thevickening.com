@@ -12,6 +12,8 @@
 
   doitdoitdoit();
 
+  setInterval(doitdoitdoit, 60000);
+
   function doitdoitdoit() {
     var timeLeft = weddingDate - Date.now();
     // don't care about ms
@@ -34,8 +36,12 @@
       return render('NOW!', '');
     }
     // months
-    if (timeLeft > 60 * 60 * 24 * (365 / 12)) {
+    if (timeLeft > 60 * 60 * 24 * (365 / 12) * 3) {
       return render(timeLeft / 60 / 60 / 24 / (365 / 12), 'months')
+    }
+    // weeks
+    if (timeLeft > 60 * 60 * 24 * (10)) {
+      return render(timeLeft / 60 / 60 / 24 / 7, 'weeks')
     }
     // days
     if (timeLeft > 60 * 60 * 24) {
