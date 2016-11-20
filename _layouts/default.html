@@ -5,13 +5,16 @@
 
   <body>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="page-content {{ page.path | replace: "/", "" }}">
+      <div class="header">
+        {% include header.html %}
+      </div>
+      <div class="page-content-holder">
         {{ content }}
       </div>
+
     </div>
+
 
     {% include footer.html %}
 

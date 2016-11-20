@@ -1,0 +1,43 @@
+$site-background: desaturate(lighten(#f1c797, 20%), 20%);
+
+#countdown {
+  width: 100%;
+  background-color: #68BCA5;
+  text-align: center;
+  transition: background-color 1s;
+
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #cbd500;
+  }
+
+  .title {
+    padding: 10px 0px;
+    color: $site-background;
+    border-bottom: 5px solid $site-background;
+    // font-size: 0.75em;
+
+    @include media-query(1000px) {
+      font-size: 0.75em;
+    }
+    @include media-query(768px) {
+      font-size: 1em;
+    }
+
+  }
+  .counter {
+    padding: 10px 0px;
+    color: $site-background;
+    border-bottom: 5px solid $site-background;
+    font-size: 56px;
+    letter-spacing: -0.03em;
+    .amount {
+      letter-spacing: -0.1em;
+    }
+    .unit {
+      font-size: 28px;
+    }
+  }
+}

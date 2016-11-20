@@ -23,7 +23,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1000px;
 
 $on-tiny:          500px;
 $on-palm:          600px;
@@ -44,13 +44,15 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "fonts",
         "base",
+        "countdown",
+        "grid",
         "header",
+        "home",
         "layout",
-        "main-page"
+        "main-page",
+        "page-wide-image"
 ;
