@@ -164,3 +164,18 @@ body {
     }
   }
 }
+
+h1 {
+  &.mega {
+    font-size: 9em;
+    @include media-query(600px) {
+      font-size: 7em;
+    }
+  }
+}
+
+.short-headers {
+  h1, h2, h3 {
+    margin-bottom: -.3em;    
+  }
+}

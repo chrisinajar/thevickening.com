@@ -1,12 +1,19 @@
 .page-wide-image {
   width: 100%;
-  min-height: 200px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
   box-shadow: 0px 1px 4px 0px $grey-color-dark;
   margin-bottom: 20px;
+
+  min-height: 300px;
+  @include media-query(1200px) {
+    min-height: 200px;
+  }
+  @include media-query(600px) {
+    min-height: 150px;
+  }
 
   &.tall {
     height: 500px;
@@ -21,26 +28,44 @@
   }
   &.tea-is-hilarious {
     background-image: url(/images/eng/C_K092016-4.jpg);
-    background-position: 40% 70%;
-    @include media-query(1000px) {
-      background-position: 65% bottom;
+    background-position: center 70%;
+    @include media-query(1200px) {
+      background-position: center 70%;
+    }
+    @include media-query(600px) {
+      background-position: center 90%;
+    }
+    &.tall {
+      background-position: center 70%;
+      @include media-query(1200px) {
+        background-position: center bottom;
+      }
     }
   }
   &.tea-is-itchy {
     background-image: url(/images/eng/C_K092016-5.jpg);
-    background-position: center 70%;
+    background-position: center 60%;
     @include media-query(1200px) {
-      background-position: center bottom;
+      background-position: center 55%;
     }
     @include media-query(768px) {
       background-position: center 70%;
     }
+    &.tall {
+      background-position: center 70%;
+      @include media-query(1200px) {
+        background-position: center bottom;
+      }
+      @include media-query(768px) {
+        background-position: center 70%;
+      }
+    }
   }
   &.so-serious {
     background-image: url(/images/eng/C_K092016-12.jpg);
-    background-position: 40% middle;
+    background-position: center 35%;
     @include media-query(1100px) {
-      background-position: 40% bottom;
+      background-position: center 35%;
     }
   }
 }

@@ -2,9 +2,6 @@
   h2 {
     margin-bottom: -10px;
   }
-  .to-the-right {
-    text-align: right;
-  }
   .job-title {
     font-size: 0.9em;
     font-style: italic;
@@ -12,5 +9,31 @@
   }
   .description {
     text-align: justify;
+  }
+}
+.to-the-right {
+  text-align: right;
+}
+
+@media screen and (min-width: 0px) {
+  .xs-to-the-right {
+    text-align: right;
+  }
+  .xs-to-the-middle {
+    text-align: center;
+  }
+  .xs-to-the-left {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sm-to-the-right {
+    text-align: right;
+  }
+  .sm-to-the-middle {
+    text-align: center;
+  }
+  .sm-to-the-left {
+    text-align: left;
   }
 }
