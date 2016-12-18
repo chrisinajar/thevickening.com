@@ -169,7 +169,7 @@ h1 {
   &.mega {
     font-size: 9em;
     @include media-query(768px) {
-      font-size: 6em;
+      font-size: 5em;
     }
   }
 }
