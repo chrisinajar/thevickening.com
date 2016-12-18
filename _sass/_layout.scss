@@ -169,7 +169,8 @@ h1 {
   &.mega {
     font-size: 9em;
     @include media-query(768px) {
-      font-size: 4em;
+      font-size: 4.5em;
+      letter-spacing: -0.05em;
     }
   }
 }
