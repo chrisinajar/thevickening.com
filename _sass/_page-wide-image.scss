@@ -68,4 +68,21 @@
       background-position: center 35%;
     }
   }
+  &.smiling-like-idiots {
+    background-image: url(/images/eng/C_K092016-17.jpg);
+    background-position: center 65%;
+    @include media-query(1200px) {
+      background-position: center 70%;
+    }
+    @include media-query(600px) {
+      background-size: 130% auto;
+    }
+  }
+  &.engaged {
+    background-image: url(/images/eng/C&KHoliday-4.jpg);
+    background-position: center 55%;
+    @include media-query(1200px) {
+      background-position: center 45%;
+    }
+  }
 }

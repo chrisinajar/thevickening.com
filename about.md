@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 <div class="home-page">
-  <div class="page-wide-image so-serious">
+  <div class="page-wide-image engaged">
   </div>
   <div class="content wrapper">
     <div class="row">

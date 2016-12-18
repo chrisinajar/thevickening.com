@@ -4,7 +4,7 @@ title: RSVP
 permalink: /rsvp/
 ---
 <div class="home-page">
-  <div class="page-wide-image tea-is-hilarious">
+  <div class="page-wide-image smiling-like-idiots">
   </div>
   <div class="content wrapper">
     <center>
