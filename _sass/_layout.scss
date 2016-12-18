@@ -168,8 +168,8 @@ body {
 h1 {
   &.mega {
     font-size: 9em;
-    @include media-query(769px) {
-      font-size: 5em;
+    @include media-query(768px) {
+      font-size: 4em;
     }
   }
 }
