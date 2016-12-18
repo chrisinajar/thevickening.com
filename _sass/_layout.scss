@@ -169,9 +169,6 @@ h1 {
   &.mega {
     font-size: 9em;
     @include media-query(768px) {
-      font-size: 8em;
-    }
-    @include media-query(600px) {
       font-size: 7em;
     }
   }
