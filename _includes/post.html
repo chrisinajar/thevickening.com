@@ -1,0 +1,36 @@
+{% assign post=include.post %}
+{% assign author = site.authors | where: "name", post.author | first %}
+
+<article class="post content">
+  <header>
+    <h1 class="ui post_header">
+      <div class="content">
+        {% if post == page %}
+          <span itemprop="name headline">{{ post.title }}</span>
+        {% else %}
+          <a href="{{ post.url }}" class="ui post_header" itemprop="name headline">
+            <h1>{{ post.title }}</h1>
+          </a>
+        {% endif %}
+        <div class="sub post_header">
+          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ post.date | date: "%b %-d, %Y" }}
+          </time>
+          by 
+          <!-- <a itemprop="author" href="{{ author.slug | prepend: '/team/' |  prepend: site.baseurl  }}" class="ui link"> -->
+            {{author.display_name}}
+          <!-- </a> -->
+        </div>
+      </div>
+    </h1>
+  </header>
+  <div class="ui horizontal divider"></div>
+  <div class="content" itemprop="articleBody">
+    {% if include.display %}
+      {{ include.display }}
+    {% else %}
+      {{ post.content }}
+    {% endif %}
+  </div>
+
+</article>

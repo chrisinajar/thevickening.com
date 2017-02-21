@@ -19,3 +19,16 @@ github_username:  chrisinajar
 markdown: kramdown
 
 wedding_time: 1504382400000
+
+# set up authors and /team/ pages
+collections:
+  authors:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post

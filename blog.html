@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+<div class="blog-page">
+  <div class="page-wide-image tea-is-hilarious">
+  </div>
+  <div class="content wrapper">
+    <!-- <div class="row"> -->
+    {% for post in site.posts %}
+      {% include post.html post=post display=post.excerpt %}
+    {% endfor %}
+    <!-- </div> -->
+  </div>
+</div>
