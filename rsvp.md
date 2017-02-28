@@ -8,10 +8,13 @@ permalink: /rsvp/
   </div>
   <div class="content wrapper">
     <center>
-      <h1>Not yet!</h1>
-      <img src="{{ '/images/soon.jpg' | prepend: site.baseurl }}">
-      <h2>We're still working out the details</h2>
-      You'll be able to RSVP on this page once we're ready!
+      <h1>Répondez, S'il Vous Plaît</h1>
+      <h3><i>That means "please respond"</i></h3>
+      <!-- i looked it up -->
+      <p>Your invitation contained a passphrase, please enter it below</p>
+      <input style="font-size: 38px; border-radius: 5px;" type="text" name="whyareyoulookingatthis" id="seriouslygoaway" placeholder="open sesame" />
     </center>
   </div>
 </div>
+
+<script type="text/javascript" src="{{ "/js/rsvp.js" | prepend: site.baseurl }}"></script>
