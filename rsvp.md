@@ -14,10 +14,6 @@ permalink: /rsvp/
       <p>Your invitation contained a passphrase, please enter it below</p>
       <input style="font-size: 38px; border-radius: 5px;" type="text" name="whyareyoulookingatthis" id="seriouslygoaway" placeholder="open sesame" />
     </center>
-
-    <p>
-      Hello there!
-    </p>
     <p>
       We are so excited that you will be celebrating the Vickening with us! The longer you can celebrate, the better! Below are a few hotel options for your stay. Let us know if we can help you book your room or if you need assistance with anything else! 
     </p>
