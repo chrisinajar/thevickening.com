@@ -1,0 +1,34 @@
+.registry {
+  .target-button {
+    // @extend %clearfix;
+
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #333;
+    background: white;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+
+    img {
+      width: 49%;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+    .description {
+      position: absolute;
+      right: 10px;
+
+      display: inline-block;
+      width: 40%;
+      font-size: 36px;
+      color: black;
+      line-height: 65px;
+    }
+  }
+}

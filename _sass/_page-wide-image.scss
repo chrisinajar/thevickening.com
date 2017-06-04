@@ -85,4 +85,12 @@
       background-position: center 45%;
     }
   }
+  &.stop-looking-at-me {
+    background-image: url(/images/eng/C_K092016-7.jpg);
+    background-position: center 65%;
+    // @include media-query(1200px) {
+    //   background-position: center 45%;
+    // }
+  }
+  
 }
