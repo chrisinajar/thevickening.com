@@ -26,6 +26,16 @@
       background-size: 150% auto;
     }
   }
+  &.tea-is-distracting {
+    background-image: url(/images/eng/C_K092016-3.jpg);
+    background-position: center 70%;
+    @include media-query(1200px) {
+      background-position: center 65%;
+    }
+    @include media-query(600px) {
+      background-position: center 70%;
+    }
+  }
   &.tea-is-hilarious {
     background-image: url(/images/eng/C_K092016-4.jpg);
     background-position: center 70%;
