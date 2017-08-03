@@ -40,11 +40,11 @@
       return render(timeLeft / 60 / 60 / 24 / (365 / 12), 'months')
     }
     // weeks
-    if (timeLeft > 60 * 60 * 24 * (10)) {
+    if (timeLeft > 60 * 60 * 24 * (30)) {
       return render(timeLeft / 60 / 60 / 24 / 7, 'weeks')
     }
     // days
-    if (timeLeft > 60 * 60 * 24) {
+    if (timeLeft > 60 * 60 * 24 * 1.9) {
       return render(timeLeft / 60 / 60 / 24, 'days')
     }
     // hours
